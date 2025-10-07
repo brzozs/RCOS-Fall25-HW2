@@ -4,12 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+  body {
+    background-image: url('assets/image/rpi_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #282c34;
+    color: #abb2bf;
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  a { color: #61afef; }
+  h1,h2 { color: #e06c75; }
+  main { padding: 2rem; }
+  </style>
   </head>
   <body>
-    <main>
+    <main id="top">
       <h1>This is my website for Assignment 2.</h1>
-      <p><a href="/page2.html">Click here for the second page.</a></p>
+      <p><a href="#page2">Click here for the second page.</a></p>
     </main>
+
+    <section id="page2">
+      <main>
+        <h2>This is the second page.</h2>
+        <p><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Go to YouTube</a></p>
+        <br>
+        <p><a href="#top">Back to the main page</a></p>
+      </main>
+    </section>
   </body>
 </html>
