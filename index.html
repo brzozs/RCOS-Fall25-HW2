@@ -20,6 +20,12 @@
   a { color: #61afef; }
   h1,h2 { color: #e06c75; }
   main { padding: 2rem; }
+
+  /* Show only the targeted section to simulate separate pages */
+  section { display: none; }
+  section:target { display: block; }
+  /* Ensure top/main is visible when no target is present */
+  :not(:target) > main#top { display: block; }
   </style>
   </head>
   <body>
